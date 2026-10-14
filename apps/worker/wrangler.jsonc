@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "memorix",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  // テスト環境(vitest-pool-workers)と本番の挙動を揃える(jose等のNode API利用に備える)
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "../web/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*", "/img/*"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "memorix-db", "database_id": "<作成後に記入>" }
+  ],
+  "kv_namespaces": [{ "binding": "KV", "id": "<作成後に記入>" }],
+  "r2_buckets": [{ "binding": "IMAGES", "bucket_name": "memorix-images" }],
+  "vars": { "APP_ORIGIN": "https://memorix.<account>.workers.dev" },
+  "observability": { "enabled": true }
+}

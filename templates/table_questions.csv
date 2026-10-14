@@ -1,0 +1,5 @@
+question_id,display_order,question_title,image_url,row,col,cell_type,content,is_blank
+q-table-1,2,サンプル表問題,,0,0,header,県,
+q-table-1,2,サンプル表問題,,0,1,header,県庁所在地,
+q-table-1,2,サンプル表問題,,1,0,text,東京都,
+q-table-1,2,サンプル表問題,,1,1,blank,,1

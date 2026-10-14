@@ -1,0 +1,36 @@
+{
+  "name": "@memorix/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@memorix/shared": "workspace:*",
+    "@tanstack/react-query": "5.101.2",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-router-dom": "7.18.1",
+    "recharts": "2.15.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.2",
+    "@tailwindcss/vite": "4.3.2",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.3",
+    "tailwindcss": "4.3.2",
+    "typescript": "6.0.3",
+    "vite": "8.1.3",
+    "vite-plugin-pwa": "1.3.0",
+    "vitest": "4.1.9",
+    "workbox-build": "7.4.1",
+    "workbox-window": "7.4.1"
+  }
+}

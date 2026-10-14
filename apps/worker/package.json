@@ -1,0 +1,31 @@
+{
+  "name": "@memorix/worker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "0.8.0",
+    "@memorix/shared": "workspace:*",
+    "fflate": "^0.8.3",
+    "hono": "4.12.27",
+    "jose": "6.2.3",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.2",
+    "@cloudflare/vitest-pool-workers": "0.18.0",
+    "@cloudflare/workers-types": "4.20260701.1",
+    "@memorix/web": "workspace:*",
+    "@types/node": "26.1.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.9",
+    "wrangler": "4.107.0"
+  }
+}

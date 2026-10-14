@@ -1,0 +1,44 @@
+# 依存・ビルド成果物
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Cloudflare / Turborepo / Vite / Vitest
+.wrangler/
+.turbo/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 環境変数・秘密情報
+.env
+.env.local
+.env.*.local
+
+# ログ・キャッシュ
+*.log
+.cache/
+
+# Playwright（apps/e2e）
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# OS / エディタ
+Thumbs.db
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code（ローカル設定は共有しない）
+.claude/settings.local.json
+.claude/
